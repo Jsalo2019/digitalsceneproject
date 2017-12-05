@@ -32,4 +32,5 @@ function drawPerson() {
   moveBackward(25);
   turnRight(90);
   moveForward(25);
+   penUp();
 }

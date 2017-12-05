@@ -27,9 +27,10 @@ function drawAllClouds() {
     drawCloud(randomNumber(12, 14), randomNumber(18, 22));
   }
 }
-function drawBird() {
+// Change the width for fatter or skinnier bird.
+function drawBird(width) {
   penRGB(115, 115, 115, 1);
-  penWidth(3);
+  penWidth(width);
   penDown();
   turnTo(35);
   moveForward(10);
@@ -42,7 +43,7 @@ function drawBird() {
 function drawAllBirds() {
   for (var i = 0; i < 4; i++) {
     moveTo(randomNumber(0, 300), randomNumber(200, 300));
-    drawBird();
+    drawBird(3);
   }
 }
 function drawGround() {

@@ -1,11 +1,15 @@
 function drawMoonLight() {
   for (var i = 0; i < 1000; i++) {
-    penRGB(185, 85, 215, 1);
+    penRGB(0, 0, 26, 1);
     moveTo(randomNumber(0, 320), randomNumber(0, 320));
     dot(1000);
   }
 }
 function drawPerson() {
+  //Setting up coordinates
+  moveTo(randomNumber(0, 400), randomNumber(360, 380));
+  //colorsetup
+  penRGB(0, 255, 255, 1);
   // Draw Head
   penWidth(3);
   dot(10);
